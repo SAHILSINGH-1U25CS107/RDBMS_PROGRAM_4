@@ -1,7 +1,7 @@
--- Student Name:
--- Register No:
+drop database if exists collegedb;
 
--- Create Course table
+create database collegedb;
+use collegedb;
 
 CREATE TABLE Course
 (
@@ -11,9 +11,10 @@ CREATE TABLE Course
     DepartmentID INT(5)
 );
 
+desc Course;
+
 INSERT INTO Course VALUES
 (101,'Database Systems',4,1),
 (102,'Operating Systems',3,1),
 (103,'Computer Networks',4,2);
-
-DESCRIBE Course;
+select * from Course;
